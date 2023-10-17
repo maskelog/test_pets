@@ -1,0 +1,518 @@
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+h1,
+h3,
+ul,
+li,
+p,
+input,
+label {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.close {
+  width: 45px;
+  height: 45px;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  content: ' ';
+  height: 22.4px;
+  width: 1px;
+  background-color: #767676;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+
+ul,
+li {
+  list-style: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+}
+
+/* 로그인 창 */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginBox {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.sectionLine {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* 버튼 UI */
+.customButton {
+  margin-bottom: 15px;
+  width: 472px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.inputContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* input */
+/* input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4caf50;
+}
+
+label {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 14px;
+  color: grey;
+} */
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* 각 inputContainer 사이의 간격을 조정합니다. */
+}
+
+.inputContainer label {
+  margin-bottom: 5px; /* 라벨과 입력 필드 사이의 간격을 조정합니다. */
+  font-size: 16px; /* 라벨의 폰트 크기를 조정합니다. */
+}
+
+.inputContainer input {
+  width: 472px; /* 입력 필드의 너비를 설정합니다. */
+  height: 50px; /* 입력 필드의 높이를 설정합니다. */
+  padding: 0 15px; /* 텍스트의 패딩을 설정합니다. */
+  font-size: 16px; /* 입력 텍스트의 폰트 크기를 조정합니다. */
+  border: 1px solid #ccc; /* 테두리 스타일을 설정합니다. */
+  border-radius: 5px; /* 테두리의 둥글기를 조정합니다. */
+}
+
+
+.error {
+  color: red;
+  margin: 10px;
+}
+
+.wrapper {
+  width: 520px;
+  margin: 50px auto;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 20px;
+
+}
+
+header button {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background: transparent;
+  border: none;
+}
+
+main {
+  padding: 26px 24px 15px 26px;
+}
+
+section {
+  box-sizing: border-box;
+}
+
+h3.login-info {
+  padding-bottom: 23px;
+  font-size: 20px;
+}
+
+form {
+  box-sizing: border-box;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #c4c4c4;
+  background: #2F80ED;
+  margin: 20px 0 22px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.sub {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#user-id,
+#user-pw {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 15px 16px 15px;
+  margin-bottom: 14px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  justify-content: center;
+  align-content: center;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+a.join,
+a.find-idPw,
+p.section-line,
+span.join {
+  font-size: 14px;
+  color: #767676;
+}
+
+.join {
+  padding: 5px;
+}
+
+p.section-line {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+p.section-line::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 210px;
+  height: 1px;
+  top: 8px;
+  background-color: #c4c4c4;
+
+}
+
+p.section-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 210px;
+  height: 1px;
+  top: 8px;
+  right: -1px;
+  background-color: #c4c4c4;
+
+}
+
+.social-button {
+  background-position: 25px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px auto;
+  outline: rgb(255, 255, 255) none 0px;
+  /* padding-left: 10%; */
+  transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* 소셜로그인 버튼 스타일 */
+
+.kakaoConnect {
+  background: rgb(255, 255, 255) url('img/kakao.svg') no-repeat scroll 13px 0px / 28px 45px padding-box border-box;
+  border: 1px solid #F2C94C;
+}
+
+.kakaoConnect:hover {
+  border-color: #F2C94C;
+  background: #F2C94C url('img/kakao.svg') no-repeat scroll 12px 0px / 28px 45px padding-box border-box;
+  transition: all .8s ease-out;
+}
+
+.kakaoConnect span {
+  box-sizing: border-box;
+  color: #767676;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.kakaoConnect:hover span {
+  color: #FFF;
+  transition: all .3s ease;
+}
+
+.googleConnect {
+  background: rgb(255, 255, 255) url('img/google.svg') no-repeat scroll 12px 11px / 28px 28px padding-box border-box;
+  border: 1px solid #767676;
+}
+
+.googleConnect:hover {
+  border-color: rgb(220, 74, 61);
+  background: rgb(220, 74, 61) url('img/google.svg') no-repeat scroll 12px 11px / 28px 28px padding-box border-box;
+  transition: all .8s ease-out;
+}
+
+.googleConnect span {
+  box-sizing: border-box;
+  color: #767676;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.googleConnect:hover span {
+  color: #FFF;
+  transition: all .3s ease;
+}
+
+.facebookConnect {
+  background: rgb(255, 255, 255) url('img/facebook.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+  border: 1px solid #2D9CDB;
+}
+
+.facebookConnect:hover {
+  border-color: #2D9CDB;
+  background: #2D9CDB url('img/facebook.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+  transition: all .8s ease-out;
+}
+
+.facebookConnect span {
+  box-sizing: border-box;
+  color: #767676;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.facebookConnect:hover span {
+  color: #FFF;
+  transition: all .3s ease;
+}
+
+.naverConnect {
+  background: rgb(255, 255, 255) url('img/naver-logo.png') no-repeat scroll 12px 10px / 28px 28px padding-box border-box;
+  border: 1px solid #00BF18;
+}
+
+.naverConnect:hover {
+  border-color: #00BF18;
+  background: #00BF18 url('img/naver-logo.png') no-repeat scroll 12px 10px / 28px 28px padding-box border-box;
+  transition: all .8s ease-out;
+}
+
+.naverConnect span {
+  box-sizing: border-box;
+  color: #767676;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.naverConnect:hover span {
+  color: #FFF;
+  transition: all .3s ease;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.round {
+  position: relative;
+}
+
+.round label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #767676;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #767676;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.box:after {
+  border: 1px solid #767676;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 5.5px;
+  left: 7px;
+  opacity: 1;
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 8px;
+}
+
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked+label .box {
+  background-color: #2F80ED;
+  border-color: #2F80ED;
+}
+
+.round input[type="checkbox"]:checked+label .box:after {
+  border: 1px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 5.5px;
+  left: 7px;
+  opacity: 1;
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 8px;
+  opacity: 1;
+}
+
+.socialButton {
+  backgroundPosition: 25px 0px;
+  boxSizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  lineHeight: 50px;
+  textAlign: center;
+  textDecoration: none;
+  textTransform: uppercase;
+  verticalAlign: middle;
+  width: 100%;
+  borderRadius: 5px;
+  margin: 10px auto;
+  outline: rgb(255, 255, 255) none 0px;
+  transition: all 0.2s cubicBezier(0.72, 0.01, 0.56, 1) 0s;
+}
+.login-btn,
+.login-btn-sns {
+    border-radius: 5px; /* Adding rounded corners */
+}
+
+.social-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #767676;
+}
+
+.social-separator::before,
+.social-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #767676;
+}
+
+.social-separator::before {
+    margin-right: .5em;
+}
+
+.social-separator::after {
+    margin-left: .5em;
+}
